@@ -1,8 +1,6 @@
 
 	<div id="footer">	
 <a style="border:none;" title="License" href="http://creativecommons.org/licenses/by/3.0/es/deed.en"><img alt="license logo" src="http://share.bernatfarrero.com/by_petit.png" /></a><br />
-	 <!-- <a style="border:none;" href="http://www.bernatfarrero.com/about">Bernat Farrero 2009-2011</a></p>
-				<p><a style="text-decoration:none;border:none;" href="http://wordpress.com"><img src="http://blog.bernatfarrero.com/images/wordpress.png" /></a></p> -->
 	</div>
 
 </div>
