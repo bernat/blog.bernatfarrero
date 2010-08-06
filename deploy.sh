@@ -10,7 +10,7 @@ else
 	else
 		if [ "$1" = "style" ]
 		then
-			scp stylesheets/*.css dberni@bernatfarrero.com:bernat/blog/wp-content/themes/bernatfarrero/stylesheets/
+			scp *.css dberni@bernatfarrero.com:bernat/blog/wp-content/themes/bernatfarrero/stylesheets/
 		else 
 			scp *.php dberni@bernatfarrero.com:bernat/blog/wp-content/themes/bernatfarrero/
 		fi

@@ -6,8 +6,8 @@
 
 <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; Blog Archive <?php } ?> <?php wp_title(); ?></title>
 
-<link rel="stylesheet" href="/stylesheets/blueprint.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/wp-content/themes/bernatfarrero/stylesheets/blueprint.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/wp-content/themes/bernatfarrero/style.css" type="text/css" media="screen" />
 
 
 <!--[if IE]><link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/ie.css" type="text/css" media="screen" /><![endif]-->
