@@ -6,6 +6,15 @@
 </div>
 
 </div>
+<script src='/wp-content/themes/bernatfarrero/javascripts/highlight.js' type='text/javascript'></script> 
+<script type='text/javascript'> 
+  //<![CDATA[
+    hljs.initHighlightingOnLoad();
+  //]]>
+</script>
+
+
+
 
   <script type="text/javascript">
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

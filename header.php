@@ -7,7 +7,7 @@
   <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; Blog Archive <?php } ?> <?php wp_title(); ?></title>
 
   <link rel="stylesheet" href="/wp-content/themes/bernatfarrero/stylesheets/blueprint.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="/wp-content/themes/bernatfarrero/style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/wp-content/themes/bernatfarrero/stylesheets/style.css" type="text/css" media="screen" />
   <meta name="locality" content="Barcelona, España" />
   <meta name="robots" content="index, follow" />
 
@@ -15,7 +15,7 @@
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-  <script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js"></script>
+  <!-- <script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js"></script>
   <script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushBash.js"></script>
   <script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCss.js"></script>
   <script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/current/scripts/shBrushDiff.js"></script>
@@ -28,9 +28,9 @@
   <link type="text/css" rel="stylesheet" href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" id="shTheme"/>
 
   <script type="text/javascript">
-  	SyntaxHighlighter.config.clipboardSwf = 'http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf';
-  	SyntaxHighlighter.all();
-  </script>
+    SyntaxHighlighter.config.clipboardSwf = 'http://alexgorbatchev.com/pub/sh/current/scripts/clipboard.swf';
+    SyntaxHighlighter.all();
+  </script> -->
 
   <?php wp_head(); ?>
 </head>

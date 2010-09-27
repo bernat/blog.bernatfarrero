@@ -11,7 +11,7 @@
 
 			<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 
-			<div id="post_header">
+			<div class="post_header">
 				<b>Posted on &nbsp;</b> <?php the_time('F jS, Y') ?> 
 					<ul>
 					 <li><?php the_category('</li><li>') ?></li>
