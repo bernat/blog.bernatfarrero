@@ -20,7 +20,7 @@
 
 			<?php the_content('Read the rest of this entry &raquo;'); ?>
 
-			<p><?php the_tags("<b>Tags:</b> <span class='tag'>", "</span><span class='tag'>", "</span>"); ?></p>
+			<p><?php the_tags("<b>Tags:</b> <span class='tagpost'>", "</span><span class='tagpost'>", "</span>"); ?></p>
 
 			 <span style="font-weight:600;"><?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></span>
 

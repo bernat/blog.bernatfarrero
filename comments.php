@@ -14,7 +14,7 @@
 	}
 
 	/* This variable is for alternating comment background */
-	$oddcomment = 'class="alt" ';
+	$oddcomment = '';
 ?>
 
 <!-- You can start editing here. -->
@@ -24,31 +24,28 @@
 
 	<h3><?php comments_number('No Comments', 'One Comment', '% Comments' );?> on &#8220;<?php the_title(); ?>&#8221;</h3>
 
-	<ol class="commentlist">
 		<p style="text-align:right;padding-right:10px;"><a href="http://blog.bernatfarrero.com/comments/feed/">Follow comments feed</a></p>
 
 	<?php $count_pings = 1; foreach ($comments as $comment) : ?>
-
-		<li <?php echo $oddcomment; ?>id="comment-<?php comment_ID() ?>">
-			<div style="float:left;margin-left:-70px;">
+		<div class="commentpost <?php echo $oddcomment; ?>" id="comment-<?php comment_ID() ?>">
+			<div style="float:right;margin-right:10px;">
 				<?php echo get_avatar( $comment, 60 ); ?>
 			</div>
-			<span><?php echo $count_pings; $count_pings++; ?></span>
 			<cite><?php comment_author_link() ?>&nbsp;said at <?php comment_time() ?> on <?php comment_date('F jS, Y') ?>:</cite>
 			<?php comment_text() ?>
 			<?php if ($comment->comment_approved == '0') : ?>
 			<p><b>Your comment is awaiting moderation.</b></p>
 			<?php endif; ?>
-		</li>
+		</div>
 
 	<?php
 		/* Changes every other comment to a different class */
-		$oddcomment = ( empty( $oddcomment ) ) ? 'class="alt" ' : '';
+		$oddcomment = ( empty( $oddcomment ) ) ? 'odd_comment' : '';
 	?>
+
 
 	<?php endforeach; /* end for each comment */ ?>
 
-	</ol>
 
  <?php else : // this is displayed if there are no comments so far ?>
 
@@ -77,7 +74,6 @@
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
-<ul class="formlist">
 
 <?php if ( $user_ID ) : ?>
 
@@ -86,24 +82,23 @@
 
 <?php else : ?>
 
-<li><input type="text" name="author" id="author" value="Name <?php if ($req) echo "(required)"; ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> onblur="if(this.value.length == 0) this.value='Name <?php if ($req) echo "(required)"; ?>';" onclick="if(this.value == 'Name <?php if ($req) echo "(required)"; ?>') this.value='';" /></li>
+<input type="text" name="author" id="author" value="Name <?php if ($req) echo "(required)"; ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> onblur="if(this.value.length == 0) this.value='Name <?php if ($req) echo "(required)"; ?>';" onclick="if(this.value == 'Name <?php if ($req) echo "(required)"; ?>') this.value='';" />
 
-<li><input type="text" name="email" id="email" value="Mail (will not be published) <?php if ($req) echo "(required)"; ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> onblur="if(this.value.length == 0) this.value='Mail (will not be published) <?php if ($req) echo "(required)"; ?>';" onclick="if(this.value == 'Mail (will not be published) <?php if ($req) echo "(required)"; ?>') this.value='';" /></li>
+<input type="text" name="email" id="email" value="Mail (will not be published) <?php if ($req) echo "(required)"; ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> onblur="if(this.value.length == 0) this.value='Mail (will not be published) <?php if ($req) echo "(required)"; ?>';" onclick="if(this.value == 'Mail (will not be published) <?php if ($req) echo "(required)"; ?>') this.value='';" />
 
-<li><input type="text" name="url" id="url" value="Website" size="22" tabindex="3" onblur="if(this.value.length == 0) this.value='Website';" onclick="if(this.value == 'Website') this.value='';" /></li>
+<input type="text" name="url" id="url" value="Website" size="22" tabindex="3" onblur="if(this.value.length == 0) this.value='Website';" onclick="if(this.value == 'Website') this.value='';" />
 
 <?php endif; ?>
 
 <!--<p><small><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></small></p>-->
 
-<li><textarea name="comment" id="comment" cols="70%" rows="10" tabindex="4" value="Enter comment here."></textarea></li>
+<textarea name="comment" id="comment" cols="70%" rows="10" tabindex="4" value="Enter comment here."></textarea><br />
 
-<li class="submitbutton"><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" /></li>
+<span class="submitbutton"><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" /></span>
 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
 
 <?php do_action('comment_form', $post->ID); ?>
 
-</ul>
 
 </form>
 

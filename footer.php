@@ -1,10 +1,10 @@
+</div>
 <div id="footer">
   <a style="border:none;" title="License" href="http://creativecommons.org/licenses/by/3.0/es/deed.en">
     <img alt="license logo" src="http://share.bernatfarrero.com/by_petit.png" />
-  </a>
+  </a><br / >
+  Wordpress theme by Bernat Farrero
   <br />
-</div>
-
 </div>
 <script src='/wp-content/themes/bernatfarrero/javascripts/highlight.js' type='text/javascript'></script> 
 <script type='text/javascript'> 
