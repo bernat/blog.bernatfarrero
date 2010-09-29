@@ -14,7 +14,7 @@
 			<div class="post_header">
 				<b>Posted on &nbsp;</b> <?php the_time('F jS, Y') ?> 
 					<ul>
-					 <li><?php the_category('</li><li>') ?></li>
+					 <li class="tagcategory"><?php the_category('</li><li>') ?></li>
 					</ul>	
 				</div>
 

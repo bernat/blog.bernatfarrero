@@ -280,6 +280,7 @@ hr.mini {
 }
 #sidebar .block ul {
 	border-bottom:1px dotted #ccc;
+	background-color: #f7f7f7;
 }
 #sidebar .block ul .children{
 	border:0;
@@ -299,7 +300,7 @@ hr.mini {
 	text-decoration: none;
 }
 #sidebar .block li a:hover {
-	background:#f7f7f7 url("images/bullet_red.gif") no-repeat scroll 6px 52%;
+	background:#ffffff url("images/bullet_red.gif") no-repeat scroll 6px 52%;
 }
 #sidebar .widget_search label {
 	display:block;
@@ -477,7 +478,7 @@ input {
 }
 
 #miniabout {
-	margin-top: 20px;
+	margin-bottom: 10px;
 	font-size: 13px;
 	color: #333333;
 	font-style: italic;
@@ -486,7 +487,6 @@ input {
 	padding: 10px;
 	-webkit-border-radius: 14px;
 	-moz-border-radius: 14px;
-	border: 2px solid #222222;
 }
 
 #miniabout a {
@@ -541,6 +541,20 @@ input {
 	text-decoration: none;
 	background: transparent;
 	color: black;
+}
+
+.tagcategory {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	margin-right:3px;
+	margin-bottom:2px;
+	color:#443;
+	border-style:solid;
+	border-width:1px 0;
+	padding:2px 4px 1px;
+	border-bottom: 0;
+	outline-color: -moz-use-text-color;
+	font-size: 14px;
 }
 
 /* Flickr Badge */

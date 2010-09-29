@@ -11,8 +11,8 @@
 				</form>
 		</div>
 		<div class="block">
+  			<div id="miniabout"><a href="/?page_id=2" title="About me">"I’m an IT engineer by the Facultat d’Informàtica de Barcelona (FIB) and a developer of web applications in Itnig..."</a></div>
 			<img src="/wp-content/uploads/2009/11/jo3.png" alt="Myself" style="padding-bottom:2px"/>
-			<div id="miniabout"><a href="/?page_id=2" title="About me">"I’m an IT engineer by the Facultat d’Informàtica de Barcelona (FIB) and a developer of web applications in Itnig..."</a></div>
 		</div>
 <hr class="mini">
 		<div class="block">
