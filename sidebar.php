@@ -11,8 +11,20 @@
 				</form>
 		</div>
 		<div class="block">
-  			<div id="miniabout"><a href="/?page_id=2" title="About me">"I’m an IT engineer by the Facultat d’Informàtica de Barcelona (FIB) and a developer of web applications in Itnig..."</a></div>
-			<img src="/wp-content/uploads/2009/11/jo3.png" alt="Myself" style="padding-bottom:2px"/>
+		  
+		  <a href="/?page_id=2" title="About me" class="miniabout">
+		    <img src="/wp-content/uploads/2009/11/jo3.png" alt="Myself" style="padding-bottom:2px"/>
+		    <span>I’m an IT Engineer by the Facultat d’Informàtica de Barcelona (FIB) and a web applications developer in Itnig. Click to see more.</span>
+		  </a>
+		  
+		  <br />
+      <div id="social_icons"> 
+        <div id="squared"> 
+          <div id="squared_icon"><a href="http://twitter.com/bernatfarrero"><img src="/wp-content/themes/bernatfarrero/images/twitter.png" border="0" alt="twitter"></a></div> 
+          <div id="squared_icon"><a href="http://www.flickr.com/photos/dberni/"><img src="/wp-content/themes/bernatfarrero/images/flickr.png" border="0" alt="flickr"></a></div> 
+          <div id="squared_icon"><a href="http://feeds.feedburner.com/bernatfarrero"><img src="/wp-content/themes/bernatfarrero/images/feed.png" border="0" alt="feed"></a></div> 
+        </div> 
+      </div>
 		</div>
 <hr class="mini">
 		<div class="block">
@@ -59,14 +71,15 @@
 		<br />
 		<a title="Semantic Podcast" href="http://semantic.cat"><img src="http://semantic.cat/images/logosemantic.png" alt="semantic podcast logo" style="width: 225px;" / ></a>		
 		<br />
-		<h3>Photography</h3>
-		<br />
 			<!-- Start of Flickr Badge -->
-			<table id="flickr_badge_uber_wrapper" cellpadding="0" cellspacing="10" border="0"><tr><td><table cellpadding="0" cellspacing="10" border="0" id="flickr_badge_wrapper">
-			<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=9&display=latest&size=s&layout=v&source=user&user=41319594%40N00"></script>
-			</table>
-			</td></tr></table>
+      <!-- <h3>Photography</h3>
+      <br /> -->
+      <!-- <table id="flickr_badge_uber_wrapper" cellpadding="0" cellspacing="10" border="0"><tr><td><table cellpadding="0" cellspacing="10" border="0" id="flickr_badge_wrapper">
+      <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=9&display=latest&size=s&layout=v&source=user&user=41319594%40N00"></script>
+      </table>
+      </td></tr></table> -->
+      <!-- <a class="small" href="http://www.flickr.com/photos/dberni">See more on my Flickr</a> -->
 			<!-- End of Flickr Badge -->
-			<a class="small" href="http://www.flickr.com/photos/dberni">See more on my Flickr</a>
+			
 	</div>
 	</div>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-
-<div id="content">
+<div class="row">
+<div class="column grid_9" id="content">
   <?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 
@@ -14,7 +14,7 @@
 			<div class="post_header">
 				<b>Posted on &nbsp;</b> <?php the_time('F jS, Y') ?> 
 					<ul>
-					 <li class="tagcategory"><?php the_category('</li><li>') ?></li>
+					 <li class="tagcategory"><?php the_category('</li><li class="tagcategory">') ?></li>
 					</ul>	
 				</div>
 
@@ -44,7 +44,8 @@
 	<?php endif; ?>
 
 	</div>
-	
+	<div class="column grid_3">
 <?php get_sidebar(); ?>
-
+  </div>
 <?php get_footer(); ?>
+</div>

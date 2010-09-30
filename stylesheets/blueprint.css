@@ -183,7 +183,7 @@ a img { border: none; }
 
 /* A container should group your entire grid. */
 .container {
-	min-width: 950px;
+	min-width: 960px;
 	width: 80%;
 	margin: 0 auto;
 	overflow: hidden;
